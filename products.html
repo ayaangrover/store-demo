@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayaan's Demo Store</title>
+    <link rel="icon" type="image/x-icon" href="/logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="notification">Added to cart</div>
+    <header>
+        <h1>Ayaan's Demo Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="mailto:ayaangrover@gmail.com">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="product">
+            <div class="product-image">
+                <img src="product1.jpg" alt="Product 1">
+            </div>
+            <h2>Yummy Orange Recommendation</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$99.99</p>
+            <button>Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <div class="product-image">
+                <img src="product2.jpg" alt="Product 2">
+            </div>
+            <h2>Edible Red Communication</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$149.99</p>
+            <button>Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <div class="product-image">
+                <img src="product3.jpg" alt="Product 3">
+            </div>
+            <h2>Delicious Blue Establishment</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$199.99</p>
+            <button>Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <div class="product-image">
+                <img src="product4.jpg" alt="Product 4">
+            </div>
+            <h2>Tasty Green Administration</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$249.99</p>
+            <button>Add to Cart</button>
+        </section>
+        <section class="product">
+            <div class="product-image">
+                <img src="product5.jpg" alt="Product 5">
+            </div>
+            <h2>Juicy Orange Entertainment</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="price">$299.99</p>
+            <button>Add to Cart</button>
+        </section>
+        <!-- Add more product sections as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2023 Ayaan's Demo Store. All rights reserved.</p>
+    </footer>
+    <!-- Add the notification div at the top -->
+    <script>
+        const addToCartButtons = document.querySelectorAll('.product button');
+        const notification = document.querySelector('.notification');
+        const cart = [];
+
+        addToCartButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                cart.push(index);
+                notification.style.opacity = 1;
+                setTimeout(() => {
+                    notification.style.opacity = 0;
+                }, 10000);
+
+                // Save the cart in local storage
+                localStorage.setItem('cart', JSON.stringify(cart));
+            });
+        });
+        console.log(localStorage.getItem('cart'));
+    </script>
+    
+</body>
+</html>
