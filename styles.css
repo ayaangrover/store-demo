@@ -42,7 +42,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #007bff;
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -81,22 +81,23 @@ main {
 
 .price {
     font-weight: bold;
-    color: #007bff;
+    color: #ffffff;
     margin-top: 0.5rem;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #db0c0c;
     color: white;
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: Montserrat;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #950606;
 }
 
 footer {
@@ -110,7 +111,7 @@ footer {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: rgba(26, 136, 123, 0.8);
+    background-color: #db0c0ca4;
     color: white;
     padding: 10px;
     opacity: 0;
