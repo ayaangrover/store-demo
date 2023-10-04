@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="notification">Added to cart</div>
     <header>
@@ -23,7 +25,7 @@
         </nav>
     </header>
     <main>
-        <section class="product">
+        <section class="product" id="card">
             <div class="product-image">
                 <img src="product1.jpg" alt="Product 1">
             </div>
@@ -32,8 +34,8 @@
             <p class="price">$99.99</p>
             <button>Add to Cart</button>
         </section>
-        
-        <section class="product">
+
+        <section class="product" id="card">
             <div class="product-image">
                 <img src="product2.jpg" alt="Product 2">
             </div>
@@ -42,8 +44,8 @@
             <p class="price">$149.99</p>
             <button>Add to Cart</button>
         </section>
-        
-        <section class="product">
+
+        <section class="product" id="card">
             <div class="product-image">
                 <img src="product3.jpg" alt="Product 3">
             </div>
@@ -53,7 +55,7 @@
             <button>Add to Cart</button>
         </section>
 
-        <section class="product">
+        <section class="product" id="card">
             <div class="product-image">
                 <img src="product4.jpg" alt="Product 4">
             </div>
@@ -62,7 +64,7 @@
             <p class="price">$249.99</p>
             <button>Add to Cart</button>
         </section>
-        <section class="product">
+        <section class="product" id="card">
             <div class="product-image">
                 <img src="product5.jpg" alt="Product 5">
             </div>
@@ -73,9 +75,7 @@
         </section>
         <!-- Add more product sections as needed -->
     </main>
-    <footer>
-        <p>&copy; 2023 Ayaan's Demo Store. All rights reserved.</p>
-    </footer>
+
     <!-- Add the notification div at the top -->
     <script>
         const addToCartButtons = document.querySelectorAll('.product button');
@@ -96,6 +96,14 @@
         });
         console.log(localStorage.getItem('cart'));
     </script>
-    
+      <script src="vanilla-tilt.min.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll("#card"), {
+          glare: true,
+          reverse: true,
+          "max-glare": 0.15
+        });
+      </script>
 </body>
+
 </html>

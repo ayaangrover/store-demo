@@ -26,12 +26,9 @@
         </section>
         <section class="checkout">
             <h2>Total: $0.00</h2>
-            <button>Checkout</button>
+            <button onclick="redirect()">Checkout</button>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Ayaan's Demo Store. All rights reserved.</p>
-    </footer>
     <!-- Your cart page HTML structure -->
 
         <section class="cart-items">
@@ -110,6 +107,12 @@
             }
         
             renderCartItems();
+        </script>
+        <script>
+            function redirect(){
+                console.log("redirecting")
+                window.location.href="https://ayaangrover.github.io"
+            }
         </script>
 </body>
 </html>

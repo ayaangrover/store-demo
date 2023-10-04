@@ -39,14 +39,11 @@
         </section>
 
         <!-- Product sections -->
-        <section class="product">
+        <section class="product" id="card">
             <img src="logo.jpg" alt="logo" id="logo">
         </section>
         <!-- Add more product sections as needed -->
     </main>
-    <footer>
-        <p>&copy; 2023 Ayaan's Demo Store. All rights reserved.</p>
-    </footer>
     
     <script>
         const addToCartButtons = document.querySelectorAll('.product button');
@@ -67,5 +64,14 @@
         });
         console.log(localStorage.getItem('cart'));
     </script>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll("#card"), {
+            glare: false,
+            reverse: true,
+            "max-glare": 0.15
+        });
+    </script>
+    </body>
 </body>
 </html>
