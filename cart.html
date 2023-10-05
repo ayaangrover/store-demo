@@ -26,7 +26,6 @@
         </section>
         <section class="checkout">
             <h2>Total: $0.00</h2>
-            <button onclick="redirect()">Checkout</button>
         </section>
     </main>
     <!-- Your cart page HTML structure -->
@@ -39,6 +38,9 @@
         </section>
 
         <script>
+            function myFunction() {
+                console.log("woifhj;erhdsgkjlfcbgierudsxhjgflh")
+            }
             const cartItemsSection = document.querySelector('.cart-items');
         
             const products = [
@@ -102,7 +104,10 @@
                 const checkoutSection = document.querySelector('.checkout');
                 checkoutSection.innerHTML = `
                     <h2>Total: $${total.toFixed(2)}</h2>
-                    <button>Checkout</button>
+                    <button onclick="redirect()">Checkout</button>
+                    <h4>OR</h4>
+                    <h2>Scan this to commence checkout on a mobile device and autofill info!</h2>
+                    <img src="https://images.unsplash.com/photo-1696021805706-a6f895450dbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80">
                 `;
             }
         
@@ -111,7 +116,7 @@
         <script>
             function redirect(){
                 console.log("redirecting")
-                window.location.href="https://ayaangrover.github.io"
+                window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
             }
         </script>
 </body>
