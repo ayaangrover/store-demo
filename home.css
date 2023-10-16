@@ -12,8 +12,6 @@ body::before {
     background-image: url('bg.jpg');
     background-size: cover;
     background-position: center;
-    /* opacity: 0.88; */
-    /* filter: blur(5px); */
     position: fixed;
     top: 0;
     left: 0;
